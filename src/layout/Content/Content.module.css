@@ -1,0 +1,22 @@
+.Content{
+    /* background-color: var(--grey);
+    padding: 20px 0 20px 0; */
+    height: 1000px;
+}
+.ContentTop{
+    background-color: white;
+    height: 10vh;
+
+}
+.ContentMiddle{
+    background-color: #f6f9ff;
+    height: 80vh;
+    border-radius: 25px;
+
+}
+
+.ContentBottom{
+    background-color: white;
+    height: 10vh;
+
+}

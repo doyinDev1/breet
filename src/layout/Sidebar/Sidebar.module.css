@@ -1,0 +1,24 @@
+.Total{
+    display: flex;
+    flex: 1;
+}
+
+.Total1{
+
+    /* flex: 0.20; */
+    margin-left: 260px;}
+.Total2{
+    
+width: 70vw;
+}
+.Total3{
+    
+width: 30vw;
+}
+
+/* .Sidebar{
+}
+.Content{
+}
+.Profile{
+} */
