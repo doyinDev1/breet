@@ -7,6 +7,8 @@ import { ReactComponent as Arrowleft } from '../../assets/images/arrowleft.svg'
 import { ReactComponent as Switch } from '../../assets/images/switch.svg'
 import { ReactComponent as Switch2 } from '../../assets/images/switch2.svg'
 import { ReactComponent as Text } from '../../assets/images/text.svg'
+import ghana from '../../assets/images/Ghana 1.png'
+import nigeria from '../../assets/images/nigeria.png'
 
 import toast from 'react-hot-toast'
 
@@ -26,13 +28,13 @@ const Content = () => {
     toast.success("Notifications On")
 
   }
-  const  showText = () => {
+  const showText = () => {
     setTextOpen(true)
   }
-  const  showText2 = () => {
+  const showText2 = () => {
     setTextOpen(false)
   }
- 
+
 
 
   return (
@@ -69,17 +71,47 @@ const Content = () => {
         </div>
         <div className={classes.SetMain}>
           <div className={classes.ContentSettings} onMouseEnter={showText} onMouseLeave={showText2}>
-          <div className={classes.ContentLeft} >
-
-            <Arrowup />
-            {textOpen === true ? <Text/> : ""}
-</div>
-<div className={classes.ContentRight}>
-            <h1 className={classes.SettingText}>Bank Details</h1>
-
-</div>
+            <div className={classes.ContentLeft} >
+              <Arrowup />
+              {textOpen === true ? <Text /> : ""}
+            </div>
+            <div className={classes.ContentRight}>
+              <h1 className={classes.SettingText}>Bank Details</h1>
+            </div>
           </div>
         </div>
+
+        <div className={classes.SetMain2}>
+          <div className={classes.ContentSettings2}>
+            <h1 className={classes.SettingText2}>Select Currency</h1>
+            <Arrowup />
+          </div>
+          <div className={classes.ContentSettings2}>
+            <h1 className={classes.SettingText2}>Bank Name</h1>
+            <Arrowdown />
+          </div>
+        </div>
+        {/* <div className={classes.SetMain2}>
+          <div className={classes.ContentSettings2}>
+            <div className={classes.flags}>
+
+            <img src={ghana} style={{ paddingBottom: "1.6rem"}} alt=""/>
+            <img src={nigeria} alt=""/>
+
+            </div>
+            <div>
+
+            <h1 className={classes.SettingText2} style={{ paddingBottom: "1.6rem"}}>Select Currency  {" "}</h1>
+            <h1 className={classes.SettingText2}>Select Currency  </h1>
+
+            </div>
+          </div>
+          <div className={classes.ContentSettings2}>
+            <h1 className={classes.SettingText2}>Bank Name</h1>
+            <Arrowdown />
+          </div>
+        </div> */}
+        
       </div>
 
       <div className={classes.ContentBottom}>
