@@ -6,7 +6,7 @@ import Profile from './Profile/Profile'
 const Dashboard = () => {
   return (
     <div className={classes.Dashboard} >
-        <div className={classes.Sidebar} style={{overflow: "auto"}}>
+        <div className={classes.Sidebar} style={{overflow: "hidden"}}>
            <Sidebar/>
         </div>    
     </div>

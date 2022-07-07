@@ -2,21 +2,104 @@
     /* background-color: var(--grey);
     padding: 20px 0 20px 0; */
     height: 1000px;
+
 }
 .ContentTop{
     background-color: white;
-    height: 10vh;
+    height: 5vh;
 
 }
 .ContentMiddle{
     background-color: #f6f9ff;
-    height: 80vh;
+    height: calc(100% - 5vh);
+    /* width: ; */
     border-radius: 25px;
 
 }
 
 .ContentBottom{
     background-color: white;
-    height: 10vh;
+    height: 5vh;
 
 }
+
+.SearchMain{
+    padding-top: 1.75rem;
+    padding-right: 2.56rem;
+    padding-left: 2.43rem;
+
+
+}
+
+.SearchDiv{
+    background: #FFFFFF;
+    border-radius: 16px;
+    display: flex;
+    height: 4rem;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+.SearchDiv svg{
+    margin: 0 0.6rem 0 20px;
+}
+.SearchDiv input{
+/* display: none; */
+border: none;
+outline: none;
+width: -webkit-fill-available;
+
+}
+.SearchDiv input::placeholder{
+    color: var(--grey);
+}
+.Setting{
+    padding-top: 2.56rem;
+    padding-bottom: 2.12rem;
+    font-size: 1.25rem;
+    font-family: "Inter" !important;
+    font-weight: 600;
+    line-height: 100%;
+    color: var(--darkblue);
+}
+
+.SettingText{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    
+    text-align: right;
+    
+    color: #000000;
+}
+
+.ContentSettings{
+    background: #FFFFFF;
+    border-radius: 16px;
+    display: flex;
+    height: 4.87rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2.15rem;
+    transition: all 2s;
+}
+/* .ContentLeft::after{
+	content: url(../../assets/images/Select.svg);
+} */
+.SetMain{
+    /* padding-top: 1.75rem; */
+    padding-right: 2.56rem;
+    padding-left: 2.43rem;
+padding-bottom: 0.62rem;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .Content{
+        margin-left: 260px;
+    
+    }
+}
+

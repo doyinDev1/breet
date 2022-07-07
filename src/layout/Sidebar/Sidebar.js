@@ -18,6 +18,9 @@ import { ReactComponent as Logo5active } from '../../assets/images/Icon5active.s
 
 import { ReactComponent as Settings } from '../../assets/images/settingsactive.svg'
 import { ReactComponent as Settingsactive } from '../../assets/images/settings.svg'
+
+import { ReactComponent as Logout } from '../../assets/images/logout.svg'
+
 import Content from '../../layout/Content/Content'
 import Profile from '../Profile/Profile'
 const Sidebar = () => {
@@ -41,7 +44,7 @@ const Sidebar = () => {
 			icon2: <LogoActive />,
 
 			page: < Content />,
-			page2: <Profile/>,
+			page2: <Profile />,
 		},
 
 		{
@@ -50,7 +53,7 @@ const Sidebar = () => {
 			title: 'Withdrawal',
 			page: < Content />,
 			icon2: <Logo2active />,
-			page2: <Profile/>,
+			page2: <Profile />,
 
 
 		},
@@ -60,7 +63,7 @@ const Sidebar = () => {
 			title: 'Rate Calculator',
 			page: < Content />,
 			icon2: <Logo3active />,
-			page2: <Profile/>,
+			page2: <Profile />,
 
 
 		},
@@ -70,7 +73,7 @@ const Sidebar = () => {
 			title: 'Cryto trade History',
 			page: < Content />,
 			icon2: <Logo4active />,
-			page2: <Profile/>,
+			page2: <Profile />,
 
 
 		},
@@ -80,7 +83,7 @@ const Sidebar = () => {
 			title: 'Withdrawal History',
 			page: < Content />,
 			icon2: <Logo5active />,
-			page2: <Profile/>,
+			page2: <Profile />,
 
 
 
@@ -92,7 +95,7 @@ const Sidebar = () => {
 			icon2: <LogoActive />,
 
 			page: < Content />,
-			page2: <Profile/>,
+			page2: <Profile />,
 
 		},
 
@@ -102,7 +105,17 @@ const Sidebar = () => {
 			title: 'Settings',
 			page: < Content />,
 			icon2: <Settingsactive />,
-			page2: <Profile/>,
+			page2: <Profile />,
+
+
+		},
+		{
+			id: 7,
+			icon: <Logout />,
+			title: 'Log Out',
+			page: < Content />,
+			icon2: <Settingsactive />,
+			page2: <Profile />,
 
 
 		},
@@ -113,15 +126,15 @@ const Sidebar = () => {
 
 	return (
 		<div className={classes.Total}>
-						<div  className={classes.Total1}>
-			<AdminSidebar
-				isOpen={isOpen}
-				setIsOpen={setIsOpen}
-				setCurrentPage={setCurrentPage}
-				pages={pages}
-			/>
-</div>
-			<div  className={classes.Total2}>
+			<div className={classes.Total1}>
+				<AdminSidebar
+					isOpen={isOpen}
+					setIsOpen={setIsOpen}
+					setCurrentPage={setCurrentPage}
+					pages={pages}
+				/>
+			</div>
+			<div className={classes.Total2}>
 				{pages.map((page, index) => (
 					<div key={index}> {currentPage === index && page.page} </div>
 				))}

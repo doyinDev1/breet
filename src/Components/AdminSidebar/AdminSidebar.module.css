@@ -109,13 +109,11 @@ color: #A4B6E1;
 	text-transform: capitalize;
 	overflow: hidden;
 }
-  span > .undefined {
-	  
-}
-ul > li > .ActiveTab > span > .undefined{
-		color: black !important;
+.sidebar_menu > ul > li > p > span:active{
+	color: #000;
 
-	}
+}
+
 
 .sidebar_menu > ul > li > p > img {
 	border-radius: 5px;
@@ -148,6 +146,9 @@ ul > li > .ActiveTab > span > .undefined{
 	/* border-bottom: 1px solid grey; */
 
 }
+.ActiveTab2{
+	color: black;
+}
 
 .Logo {
 	height: 20px;
@@ -171,6 +172,15 @@ ul > li > .ActiveTab > span > .undefined{
 
 	.sidebar_container {
 		left: 0 !important;
+		/* height: 100%;
+	width: 260px;
+	font-size: 14px;
+	background-color: #fff;
+	position: fixed;
+	transition: 100ms ease-out;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	transition: all ease-in-out 0.35s; */
 	}
 
 	.brand_logo > h1 {

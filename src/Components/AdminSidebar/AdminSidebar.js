@@ -3,6 +3,7 @@ import useWindowDimensions from '../../hooks/getWindowDimensions';
 import classes from './AdminSidebar.module.css';
 import { ReactComponent as Logo25 } from '../../assets/images/Divider.svg'
 import Breet from '../../assets/images/breet2.svg';
+import { toast } from 'react-hot-toast';
 const AdminSidebar = ({ isOpen, setIsOpen, setCurrentPage, pages }) => {
 	const sidebarRef = useRef(null);
 	const underlayRef = useRef(null);
@@ -59,11 +60,16 @@ const AdminSidebar = ({ isOpen, setIsOpen, setCurrentPage, pages }) => {
 		setCurrentPage(id);
 		setActiveTabId(id);
 		// alert('fired!');
+		// if (id === 8){
+		// }
 
 		// sessionStorage.setItem('currentPage', id);
 		// if (isOpen && width < 1024) setIsOpen(false);
 	};
+const doLogout = () =>{
+	toast.success("Log Out Successfully")
 
+}
 	return (
 		<div className={classes.underlay} ref={underlayRef} >
 			<div className={classes.sidebar_container} >
@@ -85,9 +91,9 @@ const AdminSidebar = ({ isOpen, setIsOpen, setCurrentPage, pages }) => {
 					<div className={classes.sidebar_menu}>
 						<ul>
 							<li onClick={() => handleClickTabLink(1)}>
-								<p className={`${activeTabId === 1 ? classes.ActiveTab : ''}`}>
+								<p className={`${activeTabId === 1 ? classes.ActiveTab : classes.ActiveTab2}`}>
 									{activeTabId === 1 ? pages[0]?.icon2 : pages[0]?.icon}
-									<span className={`${activeTabId === 1 ? classes.ActiveSpan : ''}`} > {pages[0]?.title} </span>
+									<span className={classes.sapa} > {pages[0]?.title} </span>
 								</p>
 								{console.log(activeTabId)}
 							</li>
@@ -136,6 +142,18 @@ const AdminSidebar = ({ isOpen, setIsOpen, setCurrentPage, pages }) => {
 								<p className={`${activeTabId === 0 ? classes.ActiveTab : ''}`}>
 									{activeTabId === 0 ? pages[6]?.icon2 : pages[6]?.icon}
 									<span> {pages[6]?.title} </span>
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div className={classes.sidebar_menu_wrapper} style={{paddingTop: "40px"}}>
+					<div className={classes.sidebar_menu}>
+						<ul onClick={doLogout}>
+							<li onClick={() => handleClickTabLink(8)}>
+								<p className={`${activeTabId === 8 ? classes.ActiveTab : ''}`}>
+									{activeTabId === 8 ? pages[7]?.icon : pages[7]?.icon}
+									<span> {pages[7]?.title}</span>
 								</p>
 							</li>
 						</ul>
