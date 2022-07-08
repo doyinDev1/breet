@@ -6,6 +6,7 @@ import { ReactComponent as More } from '../../assets/images/more.svg'
 import { ReactComponent as Divider } from '../../assets/images/Divider2.svg'
 import { ReactComponent as Send } from '../../assets/images/send2.svg'
 import { ReactComponent as Send2 } from '../../assets/images/send3.svg'
+import { ReactComponent as Right } from '../../assets/images/vectorRight.svg'
 
 import bitcoin from '../../assets/images/bitcoin.svg'
 import ethereum from '../../assets/images/ethereum.svg'
@@ -76,7 +77,7 @@ const Profile = () => {
             </div>
             <div className={classes.cointext} style={{ textAlign: "right" }}>
               <p className={classes.CryptoName}>Litecoin</p>
-              <p className={classes.CryptoSub}>LTC</p>
+              <p className={classes.CryptoSub} style={{ textAlign: "left" }}>LTC</p>
             </div>
           </div>
           <div className={classes.CoinDivRight}>
@@ -104,17 +105,17 @@ const Profile = () => {
         </div>
 
       </div>
-      <div style={{paddingBottom: "0.5rem"}}>
+      <div style={{ paddingBottom: "0.5rem" }}>
         <p className={classes.Activity}>Recent Activity</p>
         <p className={classes.Activity2}>July 7</p>
 
       </div>
       <div className={classes.CoinMain}>
-        <div className={classes.CoinDiv}>
+        <div className={classes.CoinDiv2}>
           <div className={classes.CoinDivLeft}>
             <div>
               {/* <img src={bitcoin} alt="bitcoin" /> */}
-              <Send2/>
+              <Send2 />
             </div>
             <div className={classes.cointext} >
               <p className={classes.CryptoName}>Sold Bitcoin</p>
@@ -124,7 +125,7 @@ const Profile = () => {
           <div className={classes.CoinDivRight}>
             <div className={classes.cointext}>
               <p className={classes.CryptoName}>0.0042 BTC</p>
-              <p className={classes.CryptoSub} style={{fontFamily: "Montserrat"}}>₦69,000.00</p>
+              <p className={classes.CryptoSub} style={{ fontFamily: "Montserrat" }}>₦69,000.00</p>
             </div>
           </div>
 
@@ -137,11 +138,11 @@ const Profile = () => {
 
 
       <div className={classes.CoinMain}>
-        <div className={classes.CoinDiv}>
+        <div className={classes.CoinDiv2}>
           <div className={classes.CoinDivLeft}>
             <div>
               {/* <img src={bitcoin} alt="bitcoin" /> */}
-              <Send/>
+              <Send />
             </div>
             <div className={classes.cointext} >
               <p className={classes.CryptoName}>Withdrawal</p>
@@ -164,11 +165,12 @@ const Profile = () => {
       </div>
       <div className={classes.BalanceMain} >
 
-<div className={classes.Balance} style={{ display: "flex" , justifyContent: "center"}} >
-  <p className={classes.BalanceText}>Total NGN Balance</p>
-</div>
+        <div className={classes.Balance} style={{ display: "flex", justifyContent: "center" }} >
+          <p className={classes.BalanceText}>View More</p>
+          <Right style={{ marginLeft: "0.67rem" }} />
+        </div>
 
-</div>
+      </div>
 
 
 

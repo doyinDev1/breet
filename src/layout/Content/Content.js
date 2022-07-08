@@ -81,7 +81,7 @@ const Content = () => {
           </div>
         </div>
 
-        <div className={classes.SetMain2}>
+        {/* <div className={classes.SetMain2}>
           <div className={classes.ContentSettings2}>
             <h1 className={classes.SettingText2}>Select Currency</h1>
             <Arrowup />
@@ -90,7 +90,7 @@ const Content = () => {
             <h1 className={classes.SettingText2}>Bank Name</h1>
             <Arrowdown />
           </div>
-        </div>
+        </div> */}
         {/* <div className={classes.SetMain2}>
           <div className={classes.ContentSettings2}>
             <div className={classes.flags}>
@@ -111,12 +111,62 @@ const Content = () => {
             <Arrowdown />
           </div>
         </div> */}
-        
+
+        <div className={classes.SettingLast}>
+
+
+          <div className={classes.SettingLastchild}>
+            <div className={classes.ChildTop}>
+              <p className={classes.SettingText2}>Select Currency</p>
+              <div style={{ marginRight: "1.6rem" }}>
+
+                <Arrowup />
+              </div>
+            </div>
+
+          </div>
+          <div className={classes.SettingLastchild}>
+            <div className={classes.ChildTop}>
+              <p className={classes.SettingText2}>Bank Name</p>
+              <div style={{ marginRight: "1.6rem" }}>
+
+                <Arrowdown />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={classes.SettingLast}>
+
+
+          <div className={classes.SettingLastchild}>
+          <div className={classes.ChildTop23}>
+            <input type="search" placeholder="Account Name" />
+              <div style={{ marginRight: "1.6rem" }}>
+
+                {/* <Arrowdown /> */}
+              </div>
+            </div>
+
+          </div>
+          <div className={classes.SettingLastchild}>
+            <div className={classes.ChildTop2}>
+            <input type="search" placeholder="Account Name" />
+              <div style={{ marginRight: "1.6rem" }}>
+
+                {/* <Arrowdown /> */}
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
       <div className={classes.ContentBottom}>
 
       </div>
+
+
+      
     </div>
   )
 }

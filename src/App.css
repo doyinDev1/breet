@@ -4,7 +4,9 @@
   box-sizing: border-box;
   font-family: 'Rubik', sans-serif;
 }
-
+*::-webkit-scrollbar {
+  display: none;
+}
 :root{
   --secondary:  rgba(50, 65, 104, 1);
   --grey:  rgba(164, 182, 225, 1);

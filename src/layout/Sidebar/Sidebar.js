@@ -19,6 +19,10 @@ import { ReactComponent as Logo5active } from '../../assets/images/Icon5active.s
 import { ReactComponent as Settings } from '../../assets/images/settingsactive.svg'
 import { ReactComponent as Settingsactive } from '../../assets/images/settings.svg'
 
+import { ReactComponent as Question } from '../../assets/images/question.svg'
+import { ReactComponent as Questionactive } from '../../assets/images/questionactive.svg'
+
+
 import { ReactComponent as Logout } from '../../assets/images/logout.svg'
 
 import Content from '../../layout/Content/Content'
@@ -91,8 +95,8 @@ const Sidebar = () => {
 		{
 			id: 5,
 			title: 'Suppport',
-			icon: <Logo />,
-			icon2: <LogoActive />,
+			icon: <Question />,
+			icon2: <Questionactive />,
 
 			page: < Content />,
 			page2: <Profile />,

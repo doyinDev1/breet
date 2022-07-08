@@ -50,6 +50,14 @@ color: #324168;
     cursor: pointer;
 
 }
+.CoinDiv2{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0.87rem;
+    align-items: center;
+    cursor: pointer;
+
+}
 .CoinMain{
     padding-bottom: 1rem;
 
@@ -102,6 +110,8 @@ box-shadow: 0px 20px 60px rgba(75, 149, 235, 0.1);
 border-radius: 8px;
 /* padding: 0 0.87rem; */
 }
+
+
 .More{
     display: flex;
     /* flex-direction: column; */
