@@ -163,6 +163,9 @@ color: #A4B6E1;
 	margin-right: 10px;
 	cursor: pointer;
 }
+.brand_logo2{
+	display: none;
+}
 
 @media screen and (min-width: 1024px) {
 	.underlay {
@@ -186,5 +189,40 @@ color: #A4B6E1;
 	.brand_logo > h1 {
 		display: none;
 	}
+	
+}
+
+@media screen and (max-width: 1024px) {
+	.sidebar_container {
+		width: 80px;
+	}
+
+	.sidebar_menu > ul > li > p > span {
+		display: none;
+	}
+	.sidebar_menu > ul > li > p:hover::after {
+	content: "";
+	}
+	.ActiveTab::after {
+	content: "";
+	}
+	.brand_logo2{
+		/* display: unset; */
+		background-color: white;
+	display: flex;
+	align-items: center;
+	z-index: 100;
+	padding: 4.3rem 0px 3.6rem 2rem;
+	height: 5rem;
+	position: sticky;
+	top: 0;
+	}
+	.brand_logo{
+		display: none;
+	}
+	.line{
+		display: none;
+	}
+	
 	
 }

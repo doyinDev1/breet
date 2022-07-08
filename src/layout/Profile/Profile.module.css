@@ -87,7 +87,14 @@ margin-left: 0.62rem;
     margin-left: 0.62rem;   
     color: #A6B2CD;
 }
-
+.CryptoSub3{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    margin-left: 0.62rem;   
+    color: #A6B2CD;
+}
 .CryptoSub2::before{
     content: url(../../assets/images/green.svg);
     margin-right: 0.37rem;
@@ -184,3 +191,25 @@ padding-left: 2.12rem;
 
 
 
+@media screen and (max-width: 1024px) {
+    .ProfileAvatarchild:nth-child(2){
+    
+    font-size: 8px;
+    
+    }
+    .CryptoSub2{
+        font-size: 10px; 
+    }
+    .CryptoSub{
+        font-size: 10px; 
+        text-align: -webkit-match-parent;
+    }
+    .CryptoSub3{
+        font-size: 10px; 
+        text-align: right;
+
+    }
+    .CryptoName{
+        /* font-size: 12px; */
+    }
+}

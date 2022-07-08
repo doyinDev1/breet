@@ -27,15 +27,19 @@ import { ReactComponent as Logout } from '../../assets/images/logout.svg'
 
 import Content from '../../layout/Content/Content'
 import Profile from '../Profile/Profile'
+import Dashboard from '../Dashboard/Dashboard'
+import Withdrawal from '../Withdrawal/Content'
+import Calculator from '../Rate Calculator/Calculator'
+import Crypto from '../Crypto Trade/Crypto'
+import Whistory from '../History/Whistory'
+import Support from '../Support/Support'
 const Sidebar = () => {
 	const [isOpen, setIsOpen] = useState(true);
 
-	const [currentPage, setCurrentPage] = useState(0);
+	const [currentPage, setCurrentPage] = useState(6);
 
 	useEffect(() => {
-		setCurrentPage(
-			sessionStorage.getItem('currentPage') ? Number(sessionStorage.getItem('currentPage')) : 0
-		);
+		setCurrentPage(6);
 
 	}, []);
 
@@ -46,26 +50,25 @@ const Sidebar = () => {
 			title: 'Dashboard',
 			icon: <Logo />,
 			icon2: <LogoActive />,
-
-			page: < Content />,
+			page: < Dashboard  />,
 			page2: <Profile />,
 		},
-
 		{
 			id: 1,
 			icon: <Logo2 />,
 			title: 'Withdrawal',
-			page: < Content />,
+			page: < Withdrawal />,
 			icon2: <Logo2active />,
 			page2: <Profile />,
 
 
 		},
+
 		{
 			id: 2,
 			icon: <Logo3 />,
 			title: 'Rate Calculator',
-			page: < Content />,
+			page: < Calculator />,
 			icon2: <Logo3active />,
 			page2: <Profile />,
 
@@ -75,7 +78,7 @@ const Sidebar = () => {
 			id: 3,
 			icon: <Logo4 />,
 			title: 'Cryto trade History',
-			page: < Content />,
+			page: < Crypto />,
 			icon2: <Logo4active />,
 			page2: <Profile />,
 
@@ -85,7 +88,7 @@ const Sidebar = () => {
 			id: 4,
 			icon: <Logo5 />,
 			title: 'Withdrawal History',
-			page: < Content />,
+			page: < Whistory />,
 			icon2: <Logo5active />,
 			page2: <Profile />,
 
@@ -98,7 +101,7 @@ const Sidebar = () => {
 			icon: <Question />,
 			icon2: <Questionactive />,
 
-			page: < Content />,
+			page: < Support/>,
 			page2: <Profile />,
 
 		},
@@ -140,7 +143,10 @@ const Sidebar = () => {
 			</div>
 			<div className={classes.Total2}>
 				{pages.map((page, index) => (
-					<div key={index}> {currentPage === index && page.page} </div>
+					<>
+					{console.log(page, "pk")}
+					<div key={index} className={`${classes?.id}`}> {currentPage === index && page.page} </div>
+					</>
 				))}
 			</div>
 			<div className={classes.Total3}>

@@ -47,7 +47,7 @@ const Profile = () => {
           <div className={classes.CoinDivRight}>
             <div className={classes.cointext}>
               <p className={classes.CryptoName}>$26,452.00</p>
-              <p className={classes.CryptoSub}>NGN | GHS</p>
+              <p className={classes.CryptoSub3}>NGN | GHS</p>
             </div>
           </div>
 

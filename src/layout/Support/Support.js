@@ -12,7 +12,7 @@ import nigeria from '../../assets/images/nigeria.png'
 
 import toast from 'react-hot-toast'
 
-const Content = () => {
+const Support = () => {
   // const [ , ]  useState()
   const [switchOpen, setSwitchOpen] = useState(false);
   const [textOpen, setTextOpen] = useState(false);
@@ -53,7 +53,7 @@ const Content = () => {
             <Search />
             <input type="search" placeholder="Good Afternoon Chika 👋🏻" />
           </div>
-          <p className={classes.Setting}>Settings</p>
+          <p className={classes.Setting}>Support</p>
         </div>
         <div className={classes.SetMain}>
           <div className={classes.ContentSettings}>
@@ -156,4 +156,4 @@ const Content = () => {
   )
 }
 
-export default Content
+export default Support
