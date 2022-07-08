@@ -61,7 +61,7 @@ font-size: 14px;
 line-height: 20px;
 color: #2C406E;
 margin-left: 0.62rem;
-text-align: end;
+/* text-align: end; */
 }
 .CryptoSub{
     font-style: normal;
@@ -71,6 +71,19 @@ text-align: end;
     margin-left: 0.62rem;   
     color: #A6B2CD;
 }
+.CryptoSub2{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    margin-left: 0.62rem;   
+    color: #A6B2CD;
+}
+
+.CryptoSub2::before{
+    content: url(../../assets/images/green.svg);
+    margin-right: 0.37rem;
+    }
 .CoinDivLeft{
     display: flex;
     align-items: center;
@@ -89,3 +102,75 @@ box-shadow: 0px 20px 60px rgba(75, 149, 235, 0.1);
 border-radius: 8px;
 /* padding: 0 0.87rem; */
 }
+.More{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    cursor: pointer;
+    
+}
+
+.Balance{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.BalanceText{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  
+    
+    color: #8795B4;
+}
+.BalanceDigit{
+    font-family: 'Montserrat' !important;
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 100%;
+text-align: right;
+
+color: #324168;
+
+}
+
+.BalanceMain{
+    padding: 1.25rem 2.12rem 0  2.12rem;
+}
+
+.Activity{
+    padding-top: 2.5rem;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 100%;
+color: #324168;
+padding-left: 2.12rem;
+}
+
+.Activity2{
+    padding-top: 2.25rem;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 100%;
+color: #324168;
+padding-left: 2.12rem;
+}
+
+.Activity3{
+    /* padding-top: 2.25rem; */
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 100%;
+color: #324168;
+padding-left: 2.12rem;
+}
+
+
+

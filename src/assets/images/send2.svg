@@ -1,0 +1,17 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect opacity="0.1" width="48" height="48" rx="16" fill="#FB774B"/>
+<rect x="20.7132" y="6.41138" width="18.2379" height="22.5125" rx="4" transform="rotate(18.0605 20.7132 6.41138)" fill="#FB774B"/>
+<mask id="mask0_1_1700" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="14" y="7" width="24" height="26">
+<rect x="20.7132" y="6.41132" width="18.2379" height="22.5125" rx="3" transform="rotate(18.0605 20.7132 6.41132)" fill="#FB774B"/>
+</mask>
+<g mask="url(#mask0_1_1700)">
+<rect opacity="0.4" x="15.5177" y="13.6718" width="18.2379" height="22.5125" rx="3" transform="rotate(2.86972 15.5177 13.6718)" fill="#170A38"/>
+</g>
+<rect x="13.0746" y="14.3682" width="18.2379" height="22.5125" rx="3" transform="rotate(2.86972 13.0746 14.3682)" fill="white"/>
+<line opacity="0.5" x1="17.2676" y1="18.9634" x2="26.6587" y2="19.4342" stroke="#0BAFFF" stroke-width="1.5" stroke-linecap="round"/>
+<line opacity="0.5" x1="17.0854" y1="22.6018" x2="26.4766" y2="23.0726" stroke="#0BAFFF" stroke-width="1.5" stroke-linecap="round"/>
+<line opacity="0.5" x1="16.9023" y1="26.24" x2="21.4438" y2="26.4677" stroke="#0BAFFF" stroke-width="1.5" stroke-linecap="round"/>
+<circle cx="23.7349" cy="33.5842" r="1.69346" transform="rotate(2.86972 23.7349 33.5842)" fill="#0BAFFF"/>
+<circle cx="25.4096" cy="33.6681" r="1.2847" transform="rotate(2.86972 25.4096 33.6681)" fill="white"/>
+<ellipse opacity="0.5" cx="23.3816" cy="40.6785" rx="12.3118" ry="1.13066" fill="#FFCABB"/>
+</svg>
