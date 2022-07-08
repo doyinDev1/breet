@@ -25,14 +25,14 @@
   padding-left: 2.43rem;
 }
 .SetMain2 {
-    display: grid;
-    /* flex-direction: column; */
-    grid-template-columns: auto auto;
-    padding: 0 2.5rem;
+  display: grid;
+  /* flex-direction: column; */
+  grid-template-columns: auto auto;
+  padding: 0 2.5rem;
 }
-.ContentSettings2:nth-child(1){
-    /* display: none; */
-    margin-right: 20px;
+.ContentSettings2:nth-child(1) {
+  /* display: none; */
+  margin-right: 20px;
 }
 
 .SearchDiv {
@@ -71,25 +71,21 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  /* identical to box height */
-
   text-align: right;
-
   color: #000000;
 }
 
 .SettingText2 {
-    font-family: "Rubik";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    /* identical to box height */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
   margin-left: 2.25rem;
-    text-align: right;
-  
-    color: var(--grey);
-  }
+  text-align: right;
+
+  color: var(--grey);
+}
 
 .ContentSettings {
   background: #ffffff;
@@ -101,25 +97,23 @@
   padding: 0 2.15rem;
   transition: all 2s ease;
 }
-.ContentSettings2{
-    background: #ffffff;
-    border-radius: 16px;
-    display: flex;
-    height: 4.87rem;
-    width: calc(100% - 15px);
-/* width: 50%; */
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 1.15rem;
-    transition: all 2s ease;
+.ContentSettings2 {
+  background: #ffffff;
+  border-radius: 16px;
+  display: flex;
+  height: 4.87rem;
+  width: calc(100% - 15px);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.15rem;
+  transition: all 2s ease;
 }
-.ContentCrop{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.ContentCrop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .SetMain {
-  /* padding-top: 1.75rem; */
   padding-right: 1.5rem;
   padding-left: 1.5rem;
   padding-bottom: 0.62rem;
@@ -139,104 +133,116 @@
   background: #ffffff;
   border-radius: 16px;
 }
-.flags{
-display: flex;
-flex-direction: column;
+.flags {
+  display: flex;
+  flex-direction: column;
+}
+.Flag{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 1.68rem;
+  margin-left: 1.57rem;
+  margin-bottom: 1.68rem;
+
+
+}
+.currency{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;  
+  text-align: right;
+  color: #000000;
 }
 
-.SettingLast{
-display: grid;
-grid-template-columns: 1fr 1fr;
-padding-top: 1.75rem;
-padding-right: 2.43rem;
-padding-left: 2.43rem;
+
+
+
+.SettingLast {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 1.75rem;
+  padding-right: 2.43rem;
+  padding-left: 2.43rem;
 }
 
-.SettingLastchild{
+.SettingLastchild {
   background: #ffffff;
-border-radius: 16px;
-
+  border-radius: 16px;
 }
 
-.SettingLastchild:nth-child(1){
-margin-right: 0.4rem;
+.SettingLastchild:nth-child(1) {
+  margin-right: 0.4rem;
 }
-.SettingLastchild:nth-child(2){
+.SettingLastchild:nth-child(2) {
   margin-left: 0.4rem;
-  }
+  height: fit-content;
 
+}
 
+.ChildTop input {
+  /* display: none; */
+  border: none;
+  outline: none;
+  width: -webkit-fill-available;
+  margin-left: 2.25rem;
+}
+.ChildTop input::placeholder {
+  color: var(--grey);
+}
+.ChildTop2 input {
+  /* display: none; */
+  border: none;
+  outline: none;
+  width: -webkit-fill-available;
+  margin-left: 2.25rem;
+}
+.ChildTop2 input::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #dadada;
+}
+.ChildTop23 input {
+  border: none;
+  outline: none;
+  width: -webkit-fill-available;
+  margin-left: 2.25rem;
+}
 
-
-  .ChildTop input {
-    /* display: none; */
-    border: none;
-    outline: none;
-    width: -webkit-fill-available;
-    margin-left: 2.25rem;
-  }
-  .ChildTop input::placeholder {
-    color: var(--grey);
-  }
-  .ChildTop2 input {
-    /* display: none; */
-    border: none;
-    outline: none;
-    width: -webkit-fill-available;
-    margin-left: 2.25rem;
-  }
-  .ChildTop2 input::placeholder {
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-color: #DADADA;
-  }
-  .ChildTop23 input {
-    /* display: none; */
-    border: none;
-    outline: none;
-    width: -webkit-fill-available;
-    margin-left: 2.25rem;
-  }
-
-  .ChildTop23 input::placeholder {
-  
-    font-family: 'Rubik';
+.ChildTop23 input::placeholder {
+  font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 100%;
-  /* identical to box height, or 14px */
-  
-  
-  color: #A4B6E1;
-  }
+  color: #a4b6e1;
+}
 
+.ChildTop {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.06rem;
+  margin-bottom: 1.06rem;
+  align-items: center;
+}
+.ChildTop2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.56rem;
+  margin-bottom: 1.56rem;
+  align-items: center;
+}
+.ChildTop23 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.56rem;
+  margin-bottom: 1.56rem;
 
-  .ChildTop{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1.06rem;
-    margin-bottom: 1.06rem;
-
-    align-items: center;
-  }
-  .ChildTop2{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1.56rem;
-    margin-bottom: 1.56rem;
-
-    align-items: center;
-  }
-  .ChildTop23{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1.56rem;
-    margin-bottom: 1.56rem;
-
-    align-items: center;
-  }
+  align-items: center;
+}
 @media screen and (max-width: 1024px) {
   .Content {
     margin-left: 260px;

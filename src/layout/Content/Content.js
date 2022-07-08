@@ -122,7 +122,26 @@ const Content = () => {
 
                 <Arrowup />
               </div>
+              
             </div>
+<div className={classes.Flag}>
+  <div>
+<img src={ghana} alt=""/>
+  </div>
+  <div>
+    <p className={classes.currency}>Cedis - GHS</p>
+  </div>
+
+</div>
+<div className={classes.Flag}>
+  <div>
+<img src={nigeria} alt=""/>
+  </div>
+  <div>
+    <p className={classes.currency}>Naira - NGN</p>
+  </div>
+
+</div>
 
           </div>
           <div className={classes.SettingLastchild}>
