@@ -20,7 +20,7 @@ const AdminSidebar = ({  setCurrentPage, pages }) => {
 		setActiveTabId(id);
 	};
 const doLogout = () =>{
-	toast.success("Log Out Successfully")
+	toast.success("Logged Out Successfully")
 
 }
 	return (
