@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import classes from "./Content.module.css"
+import classes from '../Content/Content.module.css'
 import { ReactComponent as Search } from '../../assets/images/search.svg'
 import { ReactComponent as Arrowdown } from '../../assets/images/arrowdown.svg'
 import { ReactComponent as Arrowup } from '../../assets/images/arrowup.svg'
@@ -13,10 +13,8 @@ import nigeria from '../../assets/images/nigeria.png'
 import toast from 'react-hot-toast'
 
 const Crypto = () => {
-  // const [ , ]  useState()
   const [switchOpen, setSwitchOpen] = useState(false);
   const [textOpen, setTextOpen] = useState(false);
-
   const [divOpen, setDivOpen] = useState(false);
 
 
@@ -53,7 +51,7 @@ const Crypto = () => {
             <Search />
             <input type="search" placeholder="Good Afternoon Chika 👋🏻" />
           </div>
-          <p className={classes.Setting}>Crypto</p>
+          <p className={classes.Setting}>Crypto Trade History</p>
         </div>
         <div className={classes.SetMain}>
           <div className={classes.ContentSettings}>

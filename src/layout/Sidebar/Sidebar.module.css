@@ -1,33 +1,21 @@
-.Total{
-    display: flex;
-    flex: 1;
+.Total {
+  display: flex;
+  flex: 1;
 }
 
-.Total1{
-
-    /* flex: 0.20; */
-    margin-left: 260px;}
-.Total2{
-    
-width: 70vw;
+.Total1 {
+  /* flex: 0.20; */
+  margin-left: 260px;
 }
-.Total3{
-    
-width: 30vw;
+.Total2 {
+  width: 70vw;
 }
-
-/* .Sidebar{
+.Total3 {
+  width: 30vw;
 }
-.Content{
-}
-.Profile{
-} */
 
 @media screen and (max-width: 1024px) {
-
-    .Total1 {
-        /* flex: 0.20; */
-        margin-left: 0px;
-    }
-
+  .Total1 {
+    margin-left: 0px;
+  }
 }

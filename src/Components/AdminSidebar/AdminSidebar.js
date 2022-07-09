@@ -1,79 +1,30 @@
-import { useRef, useEffect, useState } from 'react';
-import useWindowDimensions from '../../hooks/getWindowDimensions';
+import {  useEffect, useState } from 'react';
 import classes from './AdminSidebar.module.css';
 import { ReactComponent as Logo25 } from '../../assets/images/Divider.svg'
 import Breet from '../../assets/images/breet2.svg';
 import BreetMini from '../../assets/images/logomini.png';
 
 import { toast } from 'react-hot-toast';
-const AdminSidebar = ({ isOpen, setIsOpen, setCurrentPage, pages }) => {
-	const sidebarRef = useRef(null);
-	const underlayRef = useRef(null);
-	const { width } = useWindowDimensions();
+const AdminSidebar = ({  setCurrentPage, pages }) => {
 	const [activeTabId, setActiveTabId] = useState(0);
 	const { id, icon, title, icon2 } = pages;
 
-	// console.log(pages[0]?.icon)
 	useEffect(() => {
-		setActiveTabId(
-			sessionStorage.getItem('currentPage') ? Number(sessionStorage.getItem('currentPage')) : 0
-		);
+		setActiveTabId(6);
 
 	}, []);
 
-	//check realtime screen width to control side-drawer behaviour
-	// useEffect(() => {
-	// 	if (width > 1024) {
-	// 		setIsOpen(true);
-	// 	}
-	// }, [setIsOpen, width]);
 
-	//controls hidding and showing of sidebar and its underlay
-	// useEffect(() => {
-	// 	if (isOpen) {
-	// 		sidebarRef.current.style.transform = `translateX(0)`;
-	// 		// underlayRef.current.style.visibility = 'visible';
-	// 	} else {
-	// 		sidebarRef.current.style.transform = `translateX(-260px)`;
-	// 		// underlayRef.current.style.visibility = 'hidden';
-	// 	}
-	// }, [isOpen]);
-
-	//prevent page scroll when modal is shown
-	// useEffect(() => {
-	// 	if (isOpen && width < 1024) {
-	// 		document.body.style.overflow = 'hidden';
-	// 	}
-	// 	return () => {
-	// 		document.body.style.overflow = 'unset';
-	// 	};
-	// }, [isOpen, width]);
-
-	//handle closemodal/sidebar on click outside modal
-	// const closeModal = (e) => {
-	// 	if (width < 1024 && (underlayRef.current === e.target || sidebarRef.current === e.target)) {
-	// 		setIsOpen(false);
-	// 	}
-	// };
-
-	//handle set reference id for page to be shown
-	//handles close sidebar on tab link click
 	const handleClickTabLink = (id) => {
 		setCurrentPage(id);
 		setActiveTabId(id);
-		// alert('fired!');
-		// if (id === 8){
-		// }
-
-		// sessionStorage.setItem('currentPage', id);
-		// if (isOpen && width < 1024) setIsOpen(false);
 	};
 const doLogout = () =>{
 	toast.success("Log Out Successfully")
 
 }
 	return (
-		<div className={classes.underlay} ref={underlayRef} >
+		<div className={classes.underlay} >
 			<div className={classes.sidebar_container} >
 				<>
 				

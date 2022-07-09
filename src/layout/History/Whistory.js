@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import classes from "./Content.module.css"
+import classes from '../Content/Content.module.css'
 import { ReactComponent as Search } from '../../assets/images/search.svg'
 import { ReactComponent as Arrowdown } from '../../assets/images/arrowdown.svg'
 import { ReactComponent as Arrowup } from '../../assets/images/arrowup.svg'
@@ -13,10 +13,8 @@ import nigeria from '../../assets/images/nigeria.png'
 import toast from 'react-hot-toast'
 
 const Whistory = () => {
-  // const [ , ]  useState()
   const [switchOpen, setSwitchOpen] = useState(false);
   const [textOpen, setTextOpen] = useState(false);
-
   const [divOpen, setDivOpen] = useState(false);
 
 

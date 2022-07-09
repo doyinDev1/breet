@@ -1,13 +1,11 @@
 import React from 'react'
-import Content from './Content/Content'
 import classes from './Dashboard.module.css'
-import Sidebar from './Sidebar/Sidebar'
-import Profile from './Profile/Profile'
+import Main from './Sidebar/Main'
 const Dashboard = () => {
   return (
     <div className={classes.Dashboard} >
-        <div className={classes.Sidebar} style={{overflow: "hidden"}}>
-           <Sidebar/>
+        <div className={classes.Sidebar} s>
+           <Main/>
         </div>    
     </div>
   )

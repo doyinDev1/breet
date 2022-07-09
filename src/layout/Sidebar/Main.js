@@ -6,36 +6,29 @@ import { ReactComponent as LogoActive } from '../../assets/images/Iconactive.svg
 
 import { ReactComponent as Logo2 } from '../../assets/images/Icon2.svg'
 import { ReactComponent as Logo2active } from '../../assets/images/Icon2active.svg'
-
 import { ReactComponent as Logo3 } from '../../assets/images/Icon3.svg'
 import { ReactComponent as Logo3active } from '../../assets/images/Icon3active.svg'
-
 import { ReactComponent as Logo4 } from '../../assets/images/Icon4.svg'
 import { ReactComponent as Logo4active } from '../../assets/images/Icon4active.svg'
-
 import { ReactComponent as Logo5 } from '../../assets/images/Icon5.svg'
 import { ReactComponent as Logo5active } from '../../assets/images/Icon5active.svg'
-
 import { ReactComponent as Settings } from '../../assets/images/settingsactive.svg'
 import { ReactComponent as Settingsactive } from '../../assets/images/settings.svg'
-
 import { ReactComponent as Question } from '../../assets/images/question.svg'
 import { ReactComponent as Questionactive } from '../../assets/images/questionactive.svg'
 
 
 import { ReactComponent as Logout } from '../../assets/images/logout.svg'
 
-import Content from '../../layout/Content/Content'
+import Content from '../Content/Content'
 import Profile from '../Profile/Profile'
 import Dashboard from '../Dashboard/Dashboard'
-import Withdrawal from '../Withdrawal/Content'
+import Withdrawal from '../Withdrawal/Withdrawal'
 import Calculator from '../Rate Calculator/Calculator'
 import Crypto from '../Crypto Trade/Crypto'
 import Whistory from '../History/Whistory'
 import Support from '../Support/Support'
-const Sidebar = () => {
-	const [isOpen, setIsOpen] = useState(true);
-
+const Main = () => {
 	const [currentPage, setCurrentPage] = useState(6);
 
 	useEffect(() => {
@@ -135,8 +128,7 @@ const Sidebar = () => {
 		<div className={classes.Total}>
 			<div className={classes.Total1}>
 				<AdminSidebar
-					isOpen={isOpen}
-					setIsOpen={setIsOpen}
+					
 					setCurrentPage={setCurrentPage}
 					pages={pages}
 				/>
@@ -158,4 +150,4 @@ const Sidebar = () => {
 	)
 }
 
-export default Sidebar
+export default Main

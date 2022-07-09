@@ -7,11 +7,9 @@ import { ReactComponent as Divider } from '../../assets/images/Divider2.svg'
 import { ReactComponent as Send } from '../../assets/images/send2.svg'
 import { ReactComponent as Send2 } from '../../assets/images/send3.svg'
 import { ReactComponent as Right } from '../../assets/images/vectorRight.svg'
-
 import bitcoin from '../../assets/images/bitcoin.svg'
 import ethereum from '../../assets/images/ethereum.svg'
 import litecoin from '../../assets/images/litecoin.svg'
-
 import Avatar from '../../assets/images/Avatarr.png'
 const Profile = () => {
   return (

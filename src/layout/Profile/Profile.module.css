@@ -1,215 +1,194 @@
+.ProfileTop {
+  margin-top: 4.12rem;
+  padding-left: 2.5rem;
+  padding-right: 2.13rem;
 
-.ProfileTop{
-    margin-top: 4.12rem;
-    padding-left: 2.5rem;
-    padding-right: 2.13rem ;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.ProfileNotifs::after{
-content: url(../../assets/images/Ellipse\ 21.svg);
-/* position: absolute; */
-position: relative;
-top: -15px;
-right: 15px;
+.ProfileNotifs::after {
+  content: url(../../assets/images/Ellipse\ 21.svg);
+  /* position: absolute; */
+  position: relative;
+  top: -15px;
+  right: 15px;
 }
-.ProfileAvatar{
-    display: flex;
-    align-items: center;   
+.ProfileAvatar {
+  display: flex;
+  align-items: center;
 }
-.ProfileAvatarchild:nth-child(2){
-    padding: 0 0.85rem;
-font-style: normal;
-font-weight: 600;
-font-size: 14px;
-line-height: 100%;
-color: #324168;
+.ProfileAvatarchild:nth-child(2) {
+  padding: 0 0.85rem;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  color: var(--darkblue);
 }
-.ProfileAvatarchild:nth-child(1){
-    height: 35px;
+.ProfileAvatarchild:nth-child(1) {
+  height: 35px;
 }
-.Text{
-    margin-top: 4.125rem;
-    padding-left: 2.5rem;
-padding-bottom: 1.3rem;
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 100%;
-color: #324168;
-
+.Text {
+  margin-top: 4.125rem;
+  padding-left: 2.5rem;
+  padding-bottom: 1.3rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  color: var(--darkblue);
 }
-.CoinDiv{
-    display: flex;
-    justify-content: space-between;
-    margin: 0 0.87rem;
-    align-items: center;
-    cursor: pointer;
-
+.CoinDiv {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0.87rem;
+  align-items: center;
+  cursor: pointer;
 }
-.CoinDiv2{
-    display: flex;
-    justify-content: space-between;
-    margin: 0 0.87rem;
-    align-items: center;
-    cursor: pointer;
-
+.CoinDiv2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0.87rem;
+  align-items: center;
+  cursor: pointer;
 }
-.CoinMain{
-    padding-bottom: 1rem;
-
+.CoinMain {
+  padding-bottom: 1rem;
 }
-.CryptoName{
-    font-style: normal;
-font-weight: 600;
-font-size: 14px;
-line-height: 20px;
-color: #2C406E;
-margin-left: 0.62rem;
-/* text-align: end; */
+.CryptoName {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2c406e;
+  margin-left: 0.62rem;
+  /* text-align: end; */
 }
-.CryptoSub{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    margin-left: 0.62rem;   
-    color: #A6B2CD;
+.CryptoSub {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  margin-left: 0.62rem;
+  color: var(--grey);
 }
-.CryptoSub2{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    margin-left: 0.62rem;   
-    color: #A6B2CD;
+.CryptoSub2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  margin-left: 0.62rem;
+  color: var(--grey);
 }
-.CryptoSub3{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    margin-left: 0.62rem;   
-    color: #A6B2CD;
+.CryptoSub3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  margin-left: 0.62rem;
+  color: var(--grey);
 }
-.CryptoSub2::before{
-    content: url(../../assets/images/green.svg);
-    margin-right: 0.37rem;
-    }
-.CoinDivLeft{
-    display: flex;
-    align-items: center;
-    margin-left: 1.25rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-
+.CryptoSub2::before {
+  content: url(../../assets/images/green.svg);
+  margin-right: 0.37rem;
 }
-.CoinDivRight{
-    margin-right: 1.25rem;
-
+.CoinDivLeft {
+  display: flex;
+  align-items: center;
+  margin-left: 1.25rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
-.CoinDiv:hover{
-    background: #FFFFFF;
-box-shadow: 0px 20px 60px rgba(75, 149, 235, 0.1);
-border-radius: 8px;
-/* padding: 0 0.87rem; */
+.CoinDivRight {
+  margin-right: 1.25rem;
+}
+.CoinDiv:hover {
+  background: #ffffff;
+  box-shadow: 0px 20px 60px rgba(75, 149, 235, 0.1);
+  border-radius: 8px;
 }
 
-
-.More{
-    display: flex;
-    /* flex-direction: column; */
-    justify-content: center;
-    cursor: pointer;
-    
+.More {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
 }
 
-.Balance{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.Balance {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.BalanceText{
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-  
-    
-    color: #8795B4;
+.BalanceText {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #8795b4;
 }
-.BalanceDigit{
-    font-family: 'Montserrat' !important;
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 100%;
-text-align: right;
+.BalanceDigit {
+  font-family: "Montserrat" !important;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  text-align: right;
 
-color: #324168;
-
+  color: var(--darkblue);
 }
 
-.BalanceMain{
-    padding: 1.25rem 2.12rem 0  2.12rem;
+.BalanceMain {
+  padding: 1.25rem 2.12rem 0 2.12rem;
 }
 
-.Activity{
-    padding-top: 2.5rem;
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 100%;
-color: #324168;
-padding-left: 2.12rem;
+.Activity {
+  padding-top: 2.5rem;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  color: var(--darkblue);
+  padding-left: 2.12rem;
 }
 
-.Activity2{
-    padding-top: 2.25rem;
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 100%;
-color: #324168;
-padding-left: 2.12rem;
+.Activity2 {
+  padding-top: 2.25rem;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  color: var(--darkblue);
+  padding-left: 2.12rem;
 }
 
-.Activity3{
-    /* padding-top: 2.25rem; */
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 100%;
-color: #324168;
-padding-left: 2.12rem;
+.Activity3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  color: var(--darkblue);
+  padding-left: 2.12rem;
 }
-
-
 
 @media screen and (max-width: 1024px) {
-    .ProfileAvatarchild:nth-child(2){
-    
+  .ProfileAvatarchild:nth-child(2) {
     font-size: 8px;
-    
-    }
-    .CryptoSub2{
-        font-size: 10px; 
-    }
-    .CryptoSub{
-        font-size: 10px; 
-        text-align: -webkit-match-parent;
-    }
-    .CryptoSub3{
-        font-size: 10px; 
-        text-align: right;
-
-    }
-    .CryptoName{
-        /* font-size: 12px; */
-    }
+  }
+  .CryptoSub2 {
+    font-size: 10px;
+  }
+  .CryptoSub {
+    font-size: 10px;
+    text-align: -webkit-match-parent;
+  }
+  .CryptoSub3 {
+    font-size: 10px;
+    text-align: right;
+  }
+  .CryptoName {
+  }
 }

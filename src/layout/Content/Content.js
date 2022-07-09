@@ -13,7 +13,6 @@ import nigeria from '../../assets/images/nigeria.png'
 import toast from 'react-hot-toast'
 
 const Content = () => {
-  // const [ , ]  useState()
   const [switchOpen, setSwitchOpen] = useState(false);
   const [textOpen, setTextOpen] = useState(false);
 

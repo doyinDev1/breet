@@ -4,11 +4,11 @@ import Dashboard from './layout/Dashboard';
 function App() {
   return (
     <>
-    
-    <div className="app">
-      <Dashboard/>
-    </div>
-    <div><Toaster/></div>
+
+      <div className="app">
+        <Dashboard />
+      </div>
+      <div><Toaster /></div>
     </>
   );
 }

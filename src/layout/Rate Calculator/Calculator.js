@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import classes from "./Content.module.css"
+// import classes from "./Content.module.css"
+import classes from '../Content/Content.module.css'
 import { ReactComponent as Search } from '../../assets/images/search.svg'
 import { ReactComponent as Arrowdown } from '../../assets/images/arrowdown.svg'
 import { ReactComponent as Arrowup } from '../../assets/images/arrowup.svg'
@@ -9,14 +10,11 @@ import { ReactComponent as Switch2 } from '../../assets/images/switch2.svg'
 import { ReactComponent as Text } from '../../assets/images/text.svg'
 import ghana from '../../assets/images/Ghana 1.png'
 import nigeria from '../../assets/images/nigeria.png'
-
 import toast from 'react-hot-toast'
 
 const Calculator = () => {
-  // const [ , ]  useState()
   const [switchOpen, setSwitchOpen] = useState(false);
   const [textOpen, setTextOpen] = useState(false);
-
   const [divOpen, setDivOpen] = useState(false);
 
 
@@ -53,7 +51,7 @@ const Calculator = () => {
             <Search />
             <input type="search" placeholder="Good Afternoon Chika 👋🏻" />
           </div>
-          <p className={classes.Setting}>Calculator</p>
+          <p className={classes.Setting}>Rate Calculator</p>
         </div>
         <div className={classes.SetMain}>
           <div className={classes.ContentSettings}>
