@@ -136,7 +136,6 @@ const Main = () => {
 			<div className={classes.Total2}>
 				{pages.map((page, index) => (
 					<>
-					{console.log(page, "pk")}
 					<div key={index} className={`${classes?.id}`}> {currentPage === index && page.page} </div>
 					</>
 				))}

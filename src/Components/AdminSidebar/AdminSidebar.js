@@ -57,7 +57,6 @@ const doLogout = () =>{
 									{activeTabId === 0 ? pages[0]?.icon2 : pages[0]?.icon}
 									<span className={classes.sapa} > {pages[0]?.title} </span>
 								</p>
-								{console.log(activeTabId)}
 							</li>
 							<li onClick={() => handleClickTabLink(1)}>
 								<p className={`${activeTabId === 1 ? classes.ActiveTab : classes.ActiveTab2}`}>
