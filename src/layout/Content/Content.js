@@ -134,7 +134,7 @@ const Content = () => {
           <div className={classes.SettingLast}>
             <div className={classes.SettingLastchild}>
               <div className={classes.ChildTop23}>
-                <input type="search" placeholder="Account Name" />
+                <input type="search" placeholder="Account Number" />
                 <div style={{ marginRight: "1.6rem" }}>
                 </div>
               </div>
