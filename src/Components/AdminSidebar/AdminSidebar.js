@@ -53,33 +53,38 @@ const doLogout = () =>{
 					<div className={classes.sidebar_menu}>
 						<ul>
 							<li onClick={() => handleClickTabLink(0)}>
-								<p className={`${activeTabId === 0 ? classes.ActiveTab : classes.ActiveTab2}`}>
+								<p className={`${activeTabId === 0 ? classes.ActiveTab : ""}`}>
 									{activeTabId === 0 ? pages[0]?.icon2 : pages[0]?.icon}
-									<span className={classes.sapa} > {pages[0]?.title} </span>
+									{/* <span className={classes.sapa} > {pages[0]?.title} </span> */}
+									{ activeTabId === 0 ? <span style={{color: "#324168"}}> {pages[0]?.title} </span> : <span> {pages[0]?.title} </span>}
+
 								</p>
 							</li>
 							<li onClick={() => handleClickTabLink(1)}>
-								<p className={`${activeTabId === 1 ? classes.ActiveTab : classes.ActiveTab2}`}>
+								<p className={`${activeTabId === 1 ? classes.ActiveTab : ""}`}>
 									{activeTabId === 1 ? pages[1]?.icon2 : pages[1]?.icon}
-									<span className={`${activeTabId === 2 ? classes.ActiveSpan : ''}`}> {pages[1]?.title} </span>
+									{ activeTabId === 1 ? <span style={{color: "#324168"}}> {pages[1]?.title} </span> : <span> {pages[1]?.title} </span>}
 								</p>
 							</li>
 							<li onClick={() => handleClickTabLink(2)}>
 								<p className={`${activeTabId === 2 ? classes.ActiveTab : ''}`}>
 									{activeTabId === 2 ? pages[2]?.icon2 : pages[2]?.icon}
-									<span> {pages[2]?.title} </span>
+									{ activeTabId === 2 ? <span style={{color: "#324168"}}> {pages[2]?.title} </span> : <span> {pages[2]?.title} </span>}
+
 								</p>
 							</li>
 							<li onClick={() => handleClickTabLink(3)}>
 								<p className={`${activeTabId === 3 ? classes.ActiveTab : ''}`}>
 									{activeTabId === 3 ? pages[3]?.icon2 : pages[3]?.icon}
-									<span> {pages[3]?.title} </span>
+									{ activeTabId === 3 ? <span style={{color: "#324168"}}> {pages[3]?.title} </span> : <span> {pages[3]?.title} </span>}
+									
 								</p>
 							</li>
 							<li onClick={() => handleClickTabLink(4)}>
 								<p className={`${activeTabId === 4 ? classes.ActiveTab : ''}`}>
 									{activeTabId === 4 ? pages[4]?.icon2 : pages[4]?.icon}
-									<span> {pages[4]?.title} </span>
+									{ activeTabId === 4 ? <span style={{color: "#324168"}}> {pages[4]?.title} </span> : <span> {pages[4]?.title} </span>}
+
 								</p>
 							</li>
 						</ul>
@@ -96,13 +101,13 @@ const doLogout = () =>{
 							<li onClick={() => handleClickTabLink(5)}>
 								<p className={`${activeTabId === 5 ? classes.ActiveTab : ''}`}>
 									{activeTabId === 5 ? pages[5]?.icon2 : pages[5]?.icon}
-									<span> {pages[5]?.title} </span>
+									{ activeTabId === 5 ? <span style={{color: "#324168"}}> {pages[5]?.title} </span> : <span> {pages[5]?.title} </span>}
 								</p>
 							</li>
 							<li onClick={() => handleClickTabLink(6)}>
 								<p className={`${activeTabId === 6 ? classes.ActiveTab : ''}`}>
 									{activeTabId === 6 ? pages[6]?.icon2 : pages[6]?.icon}
-									<span> {pages[6]?.title} </span>
+									{ activeTabId === 6 ? <span style={{color: "#324168"}}> {pages[6]?.title} </span> : <span> {pages[6]?.title} </span>}
 								</p>
 							</li>
 						</ul>
@@ -114,7 +119,7 @@ const doLogout = () =>{
 							<li onClick={() => handleClickTabLink(7)}>
 								<p className={`${activeTabId === 7 ? classes.ActiveTab : ''}`}>
 									{activeTabId === 7 ? pages[7]?.icon : pages[7]?.icon}
-									<span> {pages[7]?.title}</span>
+									{ activeTabId === 7 ? <span style={{color: "#324168"}}> {pages[7]?.title} </span> : <span> {pages[7]?.title} </span>}
 								</p>
 							</li>
 						</ul>

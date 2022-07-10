@@ -3,7 +3,6 @@ import classes from './Sidebar.module.css'
 import AdminSidebar from '../../Components/AdminSidebar/AdminSidebar'
 import { ReactComponent as Logo } from '../../assets/images/Icon.svg'
 import { ReactComponent as LogoActive } from '../../assets/images/Iconactive.svg'
-
 import { ReactComponent as Logo2 } from '../../assets/images/Icon2.svg'
 import { ReactComponent as Logo2active } from '../../assets/images/Icon2active.svg'
 import { ReactComponent as Logo3 } from '../../assets/images/Icon3.svg'
@@ -16,8 +15,6 @@ import { ReactComponent as Settings } from '../../assets/images/settingsactive.s
 import { ReactComponent as Settingsactive } from '../../assets/images/settings.svg'
 import { ReactComponent as Question } from '../../assets/images/question.svg'
 import { ReactComponent as Questionactive } from '../../assets/images/questionactive.svg'
-
-
 import { ReactComponent as Logout } from '../../assets/images/logout.svg'
 
 import Content from '../Content/Content'

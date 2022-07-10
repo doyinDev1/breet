@@ -99,12 +99,11 @@ hr .lines {
 
 .sidebar_menu > ul > li > p > span {
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
   line-height: 100%;
   color: #a4b6e1;
   margin-left: 10px;
-  text-transform: capitalize;
   overflow: hidden;
 }
 .sidebar_menu > ul > li > p > span:active {
